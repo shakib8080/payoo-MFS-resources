@@ -15,3 +15,5 @@ document
       alert("please provide currect number");
     }
   });
+
+// addmoney js
