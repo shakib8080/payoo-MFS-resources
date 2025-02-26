@@ -1,3 +1,5 @@
+// add money event without function
+
 document.getElementById("add-btn").addEventListener("click", function (event) {
   event.preventDefault();
   const addmoney = document.getElementById("addmoney-id").value;

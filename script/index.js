@@ -1,3 +1,4 @@
+// login page use  event ,,without function
 document
   .getElementById("loging-btn")
   .addEventListener("click", function (event) {
@@ -15,5 +16,3 @@ document
       alert("please provide currect number");
     }
   });
-
-// addmoney js

@@ -1,3 +1,5 @@
+// toggle without function
+
 document.getElementById("cashout").style.display = "none";
 document
   .getElementById("cashout-btn")
