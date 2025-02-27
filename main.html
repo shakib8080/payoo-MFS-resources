@@ -50,13 +50,17 @@
       <section>
         <div class="flex flex-wrap gap-14 justify-center mt-10">
           <div class="flex justify-center" id="addmoney-btn">
-            <div class="p-5 border-gray-500 border rounded-lg space-y-2">
+            <div
+              class="p-5 border-gray-500 border rounded-lg space-y-2 hover:bg-green-400"
+            >
               <img class="mx-auto" src="all images/wallet 1.png" alt="" />
               <h2>add moneys</h2>
             </div>
           </div>
           <div class="flex justify-center" id="cashout-btn">
-            <div class="p-5 border-gray-500 border rounded-lg space-y-2">
+            <div
+              class="p-5 border-gray-500 border rounded-lg space-y-2 hover:bg-red-400"
+            >
               <img class="mx-auto" src="all images/wallet 1.png" alt="" />
               <h2>Cash Out</h2>
             </div>
@@ -95,26 +99,30 @@
               <h2>add moneys</h2>
             </div>
           </div>
-          <div class="flex justify-center">
-            <div class="p-5 border-gray-500 border rounded-lg space-y-2">
+          <div class="flex justify-center" id="transaction-id">
+            <div
+              class="p-5 border-gray-500 border rounded-lg space-y-2 hover:bg-yellow-400"
+            >
               <img class="mx-auto" src="all images/wallet 1.png" alt="" />
-              <h2>add moneys</h2>
+              <h2>Transaction History</h2>
             </div>
           </div>
         </div>
 
         <section class="p-6">
           <!-- addmoney section  -->
-          <h2 class="text-4xl font-bold text-gray-500">add money</h2>
 
           <div id="addmoney">
+            <h2 class="text-4xl font-bold text-gray-500 text-center">
+              add money
+            </h2>
             <div
               class="hero-content flex-col lg:flex-row-reverse mx-auto mt-10"
             >
               <div class="card bg-base-100 w-full shrink-0 shadow-2xl">
                 <form class="card-body">
                   <legend>Select Bank</legend>
-                  <select class="select select-bordered w-full">
+                  <select class="select select-bordered w-full" id="all-bank">
                     <option disabled selected value="bkash">Bkash</option>
                     <option value="nagad">Nagad</option>
                     <option value="dbbl">DBBL</option>
@@ -163,6 +171,9 @@
           </div>
           <!-- cash out section -->
           <div id="cashout">
+            <h2 class="text-4xl text-gray-500 font-bold text-center">
+              Cash Out
+            </h2>
             <div
               class="hero-content flex-col lg:flex-row-reverse mx-auto mt-10"
             >
@@ -213,6 +224,13 @@
             </div>
           </div>
         </section>
+      </section>
+      <!-- transaction history section  -->
+      <section id="transaction-section-id" class="border-2 mx-5 rounded-lg">
+        <h2 class="text text-3xl font-bold text-center text-red-700 pt-3">
+          Transaction history
+        </h2>
+        <div id="transaction-div" class="px-4"></div>
       </section>
     </section>
     <!-- <script src="script/addmoney.js"></script>

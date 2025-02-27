@@ -1,3 +1,4 @@
+// use event cashout without function
 document
   .getElementById("withdraw-btn")
   .addEventListener("click", function (event) {
